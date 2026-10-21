@@ -58,7 +58,7 @@ def amb(a):
 
 
 LEGEND = ('<div class="legend"><span class="tag t-ped">Pedido anterior Wood Mobili</span><span class="lg">itens que a loja já pediu à Pollus</span>'
-          '<span class="sep"></span><span class="tag t-pe">Acréscimo · pronta entrega</span>'
+          '<span class="sep"></span><span class="tag t-pe">Acréscimo · pronta entrega</span><span class="tag t-enc">Acréscimo · encomenda a definir</span>'
           '<span class="lg">itens indicados nesta proposta</span></div>')
 
 FOOT = '<footer class="pf"><span>Proposta de Mobiliário — Wood Mobili · Pollus Móveis · Lista por ambiente</span><span>Orçamento mediante aprovação do layout. · {n}/3</span></footer>'

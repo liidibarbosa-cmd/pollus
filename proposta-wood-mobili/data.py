@@ -33,7 +33,7 @@ SUPERIOR = [
            F(H, 'T.G. II 2.69.048', 'estofado')]),
     I('Mesa de centro Alpi', 'pe', 'mesa-centro-alpi', 'x2', '1000', fin=[F('carvalho-noce', 'Carvalho Noce', 'lâmina carvalho')]),
     I('Mesa de apoio Alpi', 'pe', 'mesa-apoio-alpi', meas='0,70 × 0,36', fin=[F('laca-expresso', 'Laca Expresso', 'laca metalizada')]),
-    I('Mesa de apoio Alpi', 'pe', 'mesa-apoio-alpi', meas='pequena', fin=[F('laca-champanhe', 'Laca Champanhe', 'laca')]),
+    I('Mesa de apoio Alpi', 'enc', 'mesa-apoio-alpi', meas='pequena', fin=[F('laca-champanhe', 'Laca Champanhe', 'laca')]),
   ]),
   dict(code='AMB 3', name='Jantar', count='2 do pedido · 1 acréscimo', ref='Nogueira', items=[
     I('Mesa de jantar Fungi', 'ped', 'mesa-jantar-fungi', meas='2,50 × 1,20 m', fin=[F('nogueira', 'Nogueira', 'base e tampo')]),
@@ -43,11 +43,10 @@ SUPERIOR = [
 ]
 
 INFERIOR = [
-  dict(code='AMB 4', name='Estar', count='2 do pedido · 2 acréscimos', ref='Cacau + Louro Pardo', items=[
+  dict(code='AMB 4', name='Estar', count='2 do pedido · 1 acréscimo', ref='Cacau + Louro Pardo', items=[
     I('Home Volpi', 'ped', 'home-volpi', meas='2,50 m', fin=[F('louro-pardo', 'Louro Pardo', 'lâmina'), F('laca-taupe', 'Laca Taupe', 'laca')]),
     I('Sofá Planalto', 'ped', 'sofa-planalto', meas='ver layout · braço direito · bandeja esquerda',
       fin=[F('tecido-5.53.024', 'Tecido 5.53.024', 'estofado'), F(['castanho', 'carvalho-castanho'], ['Castanho', 'Carvalho Castanho'], ['madeira', 'lâmina'])]),
-    I('Mesa de apoio Alpi', 'pe', 'mesa-apoio-alpi', fin=[F('laca-expresso', 'Laca Expresso', 'laca metalizada')]),
     I('Poltrona Rhino', 'pe', 'poltrona-rhino', 'x1', fin=[F('tg-3.71.040', 'Tecido 3.71.040', 'estofado · veludo')]),
   ]),
   dict(code='AMB 5', name='Estar', count='4 do pedido · 2 acréscimos', ref='Castanho + Carvalho Castanho', items=[
