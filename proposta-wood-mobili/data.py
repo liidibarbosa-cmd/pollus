@@ -58,7 +58,7 @@ INFERIOR = [
       fin=[F('tecido-4.69.038', 'Tecido 4.69.038', 'assento'), F('revestimento-caramelo', 'Revestimento Caramelo', 'acabamento'),
            F('laca-champanhe', 'Laca Champanhe', 'metal'), F('castanho', 'Castanho', 'madeira')]),
     I('Mesa de centro Eros', 'pe', 'mesa-centro-eros', meas='1,20 + 1,60', fin=[F('laca-belga', 'Laca Belga', 'metal'), F('pinhao', 'Pinhão', 'madeira maciça')]),
-    I('Puff Roche', 'pe', 'roche', meas='45', fin=[F('tecido-5.03.006', 'Tecido 5.03.006', 'estofado'), F('laca-belga', 'Laca Belga', 'laca')]),
+    I('Puff Roche', 'enc', 'roche', meas='45', fin=[F('tecido-5.03.006', 'Tecido 5.03.006', 'estofado'), F('laca-belga', 'Laca Belga', 'laca')]),
   ]),
   dict(code='AMB 6', name='Jantar + apoio', count='3 do pedido', ref='Noce + Carvalho Noce', items=[
     I('Mesa de jantar Âmbar', 'ped', 'mesa-jantar-ambar', meas='1,60 × 1,20 m', fin=[F('castanho', 'Castanho', 'base e tampo')]),
