@@ -1,0 +1,95 @@
+:root {
+  --bg: #f7f4ef;
+  --card: #fffdfa;
+  --line: #e4dbd2;
+  --ink: #2a2421;
+  --ink2: #7b5b52;
+  --red: #a4544b;
+  --ped-bg: #dfe6ee; --ped-fg: #3f5b78;
+  --pe-bg: #e1e7d9;  --pe-fg: #5b7150;
+  --enc-bg: #93443c; --enc-fg: #fff;
+  --serif: 'Spectral', Georgia, serif;
+  --sans: 'Archivo', 'Helvetica Neue', Arial, sans-serif;
+}
+@page { size: 420mm 297mm; margin: 0; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { background: var(--bg); color: var(--ink); font-family: var(--sans); -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+.page { width: 420mm; height: 297mm; position: relative; overflow: hidden; page-break-after: always; background: var(--bg); padding: 30px 36px 0; }
+.page:last-child { page-break-after: auto; }
+b { font-weight: 600; color: var(--ink); }
+
+/* ---------- capa ---------- */
+.cover .logo { position: absolute; left: 120px; top: 124px; width: 236px; }
+.cover .ctitle { position: absolute; left: 120px; top: 428px; }
+.kicker { font-size: 11px; letter-spacing: .16em; text-transform: uppercase; color: var(--red); font-weight: 500; }
+.cover h1 { font-family: var(--serif); font-weight: 300; font-size: 72px; line-height: 1.16; margin-top: 18px; letter-spacing: .005em; }
+.cover h1 span { color: var(--red); }
+.cover .meta { margin-top: 36px; font-size: 12.5px; letter-spacing: .17em; text-transform: uppercase; color: var(--ink); }
+.cover .meta i { font-style: normal; color: var(--red); margin: 0 14px; }
+.cover .toc { position: absolute; left: 1090px; top: 848px; border-left: 1px solid var(--line); padding-left: 22px; }
+.cover .toc div + div { margin-top: 16px; }
+.cover .toc h5 { font-family: var(--serif); font-weight: 400; font-size: 17px; }
+.cover .toc p { font-size: 11px; color: var(--ink2); margin-top: 4px; }
+
+/* ---------- rodapé ---------- */
+.pf { position: absolute; left: 36px; right: 36px; bottom: 18px; border-top: 1px solid var(--line); padding-top: 10px; display: flex; justify-content: space-between; font-size: 9.5px; letter-spacing: .04em; color: var(--ink2); }
+
+/* ---------- cabeçalho das listas ---------- */
+.phead { display: flex; justify-content: space-between; align-items: flex-end; border-bottom: 1px solid var(--line); padding-bottom: 10px; }
+.phead h2 { font-family: var(--serif); font-weight: 400; font-size: 25px; line-height: 1.15; margin-top: 2px; }
+.phead h2 .sub { font-family: var(--sans); font-size: 11.5px; letter-spacing: .1em; text-transform: uppercase; color: var(--ink2); margin-left: 14px; font-weight: 400; }
+.phead .mini { width: 68px; margin-bottom: 4px; }
+.legend { display: flex; align-items: center; gap: 10px; margin-top: 8px; font-size: 9px; color: var(--ink2); }
+.legend .lg { margin-right: 6px; margin-left: 4px; }
+.legend .sep { width: 1px; height: 15px; background: var(--line); margin: 0 10px 0 4px; }
+
+.tag { display: inline-block; font-size: 7.6px; font-weight: 600; letter-spacing: .13em; text-transform: uppercase; padding: 1.5px 6px 1px; border-radius: 2px; line-height: 1.35; }
+.t-ped { background: var(--ped-bg); color: var(--ped-fg); }
+.t-pe { background: var(--pe-bg); color: var(--pe-fg); }
+.t-enc { background: var(--enc-bg); color: var(--enc-fg); }
+
+.cols { display: grid; gap: 22px; margin-top: 16px; align-items: start; }
+.cols.c4 { grid-template-columns: repeat(4, 1fr); }
+.cols.c3 { grid-template-columns: repeat(3, 1fr); }
+
+/* ---------- cartão de ambiente ---------- */
+.amb { background: var(--card); border: 1.5px solid var(--line); border-radius: 4px; padding: 10px 13px 10px; }
+.amb header { display: flex; align-items: baseline; border-bottom: 1px solid var(--line); padding-bottom: 6px; }
+.amb .code { font-size: 10px; letter-spacing: .14em; color: var(--red); font-weight: 600; margin-right: 12px; }
+.amb h3 { font-family: var(--serif); font-weight: 400; font-size: 19px; line-height: 1.2; }
+.amb header > h3:first-child { margin-left: 10px; }
+.amb .count { margin-left: auto; font-size: 9.5px; letter-spacing: .05em; color: var(--ink2); }
+.amb .ref { font-size: 9px; color: var(--ink2); margin: 6px 0 2px; }
+
+.item { display: flex; gap: 10px; padding: 6px 0 6px; }
+.item + .item { border-top: 1px dotted #d4c8bc; }
+.thumb { flex: 0 0 52px; height: 48px; display: flex; align-items: flex-start; justify-content: center; padding-top: 2px; }
+.thumb img { max-width: 52px; max-height: 46px; object-fit: contain; }
+.thumb.ph { border: 1px dashed #c9bdb2; height: 42px; align-items: center; padding: 0; margin-top: 4px; }
+.thumb.ph span { font-size: 6.6px; letter-spacing: .12em; text-transform: uppercase; color: var(--ink2); }
+.body { flex: 1; min-width: 0; }
+.body h4 { font-family: var(--serif); font-weight: 400; font-size: 15px; line-height: 1.15; margin-bottom: 3px; }
+.body h4.red { color: var(--red); }
+.body h4 .qty { font-family: var(--sans); font-size: 10px; font-weight: 600; color: var(--red); margin-left: 4px; }
+.desc, .meas, .note { font-size: 8.8px; color: var(--ink2); margin-top: 2px; line-height: 1.3; }
+.note { font-style: italic; margin-top: 1px; }
+.fins { display: flex; flex-wrap: wrap; column-gap: 14px; row-gap: 3px; margin-top: 4px; }
+.fin { display: inline-flex; align-items: center; gap: 5px; font-size: 9px; color: var(--ink2); line-height: 1.2; }
+.fin b { font-weight: 600; }
+.sws { display: inline-flex; gap: 2px; }
+.sw { width: 12px; height: 12px; border-radius: 2px; background-size: cover; background-position: center; box-shadow: inset 0 0 0 .5px rgba(0,0,0,.18); flex: 0 0 auto; }
+.sw.hatch { background: repeating-linear-gradient(135deg, #fff 0 2px, #cfc5bb 2px 2.8px); box-shadow: inset 0 0 0 .8px #c4b8ad; }
+.pend { font-style: normal; color: var(--red); }
+
+/* cartão de opções */
+.opts { display: flex; gap: 10px; margin-top: 8px; }
+.opts figure { flex: 1; text-align: center; }
+.opts .oimg { height: 64px; display: flex; align-items: flex-end; justify-content: center; }
+.opts img { max-height: 64px; max-width: 72px; object-fit: contain; }
+.opts figcaption { font-family: var(--serif); font-size: 12px; margin-top: 4px; }
+
+/* fechamento */
+.closing { position: absolute; left: 36px; right: 36px; bottom: 60px; border-top: 1px solid var(--line); padding-top: 14px; display: flex; justify-content: space-between; align-items: flex-start; }
+.closing h3 { font-family: var(--serif); font-weight: 400; font-size: 20px; }
+.closing p { font-size: 8.8px; color: var(--ink2); margin-top: 6px; }
+.closing .contact { font-size: 11.5px; color: var(--ink); letter-spacing: .03em; margin-top: 8px; }
